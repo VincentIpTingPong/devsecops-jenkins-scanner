@@ -180,7 +180,8 @@ class CodeBuildStack(Stack):
                 "codebuild_stack/codebuild_webgoat_deploy_buildspec.yaml"
             ),
             source=codebuild.Source.s3(
-                bucket=s3_bucket, path="BuildImage74257FD8-JVpbhJo0Prh0/4/results.zip"
+                # bucket=s3_bucket, path="BuildImage74257FD8-JVpbhJo0Prh0/4/results.zip"
+                bucket=s3_bucket, path="BehaveImageBuild589EE72D-F2GjdvikNAGf/6/results.zip"
             ),
             role=codebuild_role,
             secondary_sources=secondary_sources,
